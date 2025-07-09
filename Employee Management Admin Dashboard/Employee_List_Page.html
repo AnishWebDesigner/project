@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1057/1057231.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logo">🙎‍♂️&nbsp;Employee Management Admin Dashboard</div>
+        <nav>
+            <ul>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle">☰</button>
+    </header>
+
+    <aside class="sidebar">
+        <div class="sidebar-menu">
+            <h3>Main</h3>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="Employee_List_Page.html" class="active">Employee List Page</a></li>
+                <li><a href="Edit_Employee_Page.html">Add/Edit Employee Page</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <div class="search-filter">
+            <div class="search-box">
+                <input type="text" placeholder="Search employees...">
+            </div>
+            <div class="filter-options">
+                <select>
+                    <option>All Departments</option>
+                    <option>Engineering</option>
+                    <option>Marketing</option>
+                    <option>HR</option>
+                    <option>Finance</option>
+                </select>
+                <select>
+                    <option>All Status</option>
+                    <option>Active</option>
+                    <option>Inactive</option>
+                </select>
+                <a href="Edit_Employee_Page.html" class="btn">Add Employee</a>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <h2>Employee List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Department</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Smith</td>
+                        <td>john.smith@company.com</td>
+                        <td>Software Engineer</td>
+                        <td>Engineering</td>
+                        <td><span class="status active">Active</span></td>
+                        <td>
+                            <div class="action-buttons">
+                                <a href="Edit_Employee_Page.html" class="btn btn-sm btn-edit">Edit</a>
+                                <button class="btn btn-sm btn-delete">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sarah Johnson</td>
+                        <td>sarah.j@company.com</td>
+                        <td>Marketing Manager</td>
+                        <td>Marketing</td>
+                        <td><span class="status inactive">Inactive</span></td>
+                        <td>
+                            <div class="action-buttons">
+                                <a href="Edit_Employee_Page.html" class="btn btn-sm btn-edit">Edit</a>
+                                <button class="btn btn-sm btn-delete">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Michael Brown</td>
+                        <td>michael.b@company.com</td>
+                        <td>HR Specialist</td>
+                        <td>Human Resources</td>
+                        <td><span class="status active">Active</span></td>
+                        <td>
+                            <div class="action-buttons">
+                                <a href="Edit_Employee_Page.html" class="btn btn-sm btn-edit">Edit</a>
+                                <button class="btn btn-sm btn-delete">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Emily Davis</td>
+                        <td>emily.d@company.com</td>
+                        <td>Financial Analyst</td>
+                        <td>Finance</td>
+                        <td><span class="status inactive">Inactive</span></td>
+                        <td>
+                            <div class="action-buttons">
+                                <a href="Edit_Employee_Page.html" class="btn btn-sm btn-edit">Edit</a>
+                                <button class="btn btn-sm btn-delete">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Robert Wilson</td>
+                        <td>robert.w@company.com</td>
+                        <td>Intern</td>
+                        <td>Engineering</td>
+                        <td><span class="status active">Active</span></td>
+                        <td>
+                            <div class="action-buttons">
+                                <a href="Edit_Employee_Page.html" class="btn btn-sm btn-edit">Edit</a>
+                                <button class="btn btn-sm btn-delete">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>
